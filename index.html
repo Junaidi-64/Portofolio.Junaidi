@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio Junaidi | IT Enthusiast & Web Developer</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- File CSS Eksternal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 font-sans antialiased">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 glassmorphism border-b border-slate-200/80 dark:border-slate-800/80 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#hero" class="text-xl font-bold tracking-tight flex items-center gap-2 text-slate-900 dark:text-white">
+        <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center font-extrabold text-lg shadow-md shadow-blue-500/20">J</span>
+        <span>Junaidi<span class="text-blue-600">.</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+        <a href="#tentang" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Tentang</a>
+        <a href="#keahlian" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Keahlian</a>
+        <a href="#pengalaman" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Pengalaman</a>
+        <a href="#pendidikan" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Pendidikan</a>
+        <a href="#kontak" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Kontak</a>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" class="p-2.5 rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 shadow-sm transition-all focus:outline-none" title="Ubah Tema">
+          <i class="fas fa-moon dark:hidden"></i>
+          <i class="fas fa-sun hidden dark:block text-amber-400"></i>
+        </button>
+
+        <a href="https://wa.me/6288224910376" target="_blank" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold rounded-xl bg-blue-600 hover:bg-blue-700 text-white shadow-md shadow-blue-500/20 transition-all">
+          <i class="fab fa-whatsapp text-sm"></i>
+          Hubungi Saya
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button id="mobileMenuBtn" class="md:hidden p-2.5 rounded-xl text-slate-600 dark:text-slate-300 focus:outline-none">
+          <i class="fas fa-bars text-lg"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu" class="hidden md:hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 px-4 pt-3 pb-5 space-y-2 text-sm font-medium">
+      <a href="#tentang" class="block py-2 text-slate-700 dark:text-slate-300 hover:text-blue-600">Tentang</a>
+      <a href="#keahlian" class="block py-2 text-slate-700 dark:text-slate-300 hover:text-blue-600">Keahlian</a>
+      <a href="#pengalaman" class="block py-2 text-slate-700 dark:text-slate-300 hover:text-blue-600">Pengalaman</a>
+      <a href="#pendidikan" class="block py-2 text-slate-700 dark:text-slate-300 hover:text-blue-600">Pendidikan</a>
+      <a href="#kontak" class="block py-2 text-slate-700 dark:text-slate-300 hover:text-blue-600">Kontak</a>
+      <a href="https://wa.me/6288224910376" target="_blank" class="block mt-2 text-center py-2.5 rounded-lg bg-blue-600 text-white font-semibold">
+        WhatsApp: 0882-2491-0376
+      </a>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section id="hero" class="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden">
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-blue-500/15 dark:bg-blue-600/10 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Kolom Teks -->
+        <div class="md:col-span-7 space-y-6 text-center md:text-left">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 dark:bg-emerald-950/50 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800">
+            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+            Siap untuk Peluang Magang IT
+          </div>
+          
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-[1.2]">
+            Halo, Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-blue-400 dark:to-indigo-400">Junaidi</span>
+          </h1>
+
+          <div class="text-lg sm:text-xl font-medium text-slate-600 dark:text-slate-300 flex items-center justify-center md:justify-start gap-2 h-8">
+            <span id="typedText" class="text-blue-600 dark:text-blue-400 font-semibold border-r-2 border-blue-600 dark:border-blue-400 pr-1"></span>
+          </div>
+
+          <p class="text-slate-600 dark:text-slate-400 text-sm sm:text-base leading-relaxed max-w-xl mx-auto md:mx-0">
+            Mahasiswa S1 Teknik Informatika Universitas Pamulang dengan ketertarikan tinggi pada pengembangan website, jaringan komputer, dan pemecahan masalah teknis IT. Berbekal pengalaman kerja di bidang administrasi dan logistik operasional, saya memiliki etos kerja disiplin, teliti, dan cepat belajar.
+          </p>
+
+          <div class="flex flex-wrap items-center justify-center md:justify-start gap-3 pt-2">
+            <a href="#kontak" class="px-5 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold text-sm shadow-lg shadow-blue-500/25 transition-all">
+              Hubungi Saya
+            </a>
+            <a href="CV_ATS_JUNAIDI 2 New.pdf" download class="px-5 py-3 rounded-xl border border-slate-300 dark:border-slate-700 hover:border-slate-400 dark:hover:border-slate-600 font-semibold text-sm text-slate-700 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all flex items-center gap-2">
+              <i class="fas fa-file-download text-xs"></i>
+              Unduh CV (PDF)
+            </a>
+          </div>
+
+          <!-- Quick Badges -->
+          <div class="pt-4 flex flex-wrap justify-center md:justify-start gap-4 text-xs font-medium text-slate-500 dark:text-slate-400">
+            <span class="flex items-center gap-1.5"><i class="fas fa-map-marker-alt text-rose-500"></i> Kembangan Selatan, Jakarta Barat</span>
+            <span class="flex items-center gap-1.5"><i class="fas fa-university text-blue-500"></i> Univ. Pamulang (2025-Sekarang)</span>
+          </div>
+        </div>
+
+        <!-- Kolom Foto -->
+        <div class="md:col-span-5 flex justify-center">
+          <div class="relative group">
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-3xl blur-md opacity-30 group-hover:opacity-60 transition duration-500"></div>
+            <div class="relative w-64 h-80 sm:w-72 sm:h-96 rounded-2xl overflow-hidden bg-slate-200 dark:bg-slate-800 border-4 border-white dark:border-slate-900 shadow-xl">
+              <img src="Foto Junn.jpeg" alt="Foto Profil Junaidi" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=600'">
+            </div>
+            
+            <div class="absolute -bottom-4 -left-4 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl p-3 shadow-lg flex items-center gap-3">
+              <div class="w-10 h-10 rounded-lg bg-blue-100 dark:bg-blue-950/70 text-blue-600 dark:text-blue-400 flex items-center justify-center font-bold">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div>
+                <p class="text-[11px] text-slate-500 dark:text-slate-400">Minat Spesialisasi</p>
+                <p class="text-xs font-bold text-slate-900 dark:text-white">Web Dev & IT Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG SAYA -->
+  <section id="tentang" class="py-16 bg-white dark:bg-slate-900/50 border-y border-slate-200/80 dark:border-slate-800/80">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Ringkasan Profesional</h2>
+        <p class="mt-1 text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Tentang Saya</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center text-xl mb-4">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3 class="font-bold text-base text-slate-900 dark:text-white mb-2">Akademis & Fondasi</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Menempuh pendidikan Sarjana Teknik Informatika di Universitas Pamulang (sejak 2025). Menguasai dasar logika pemrograman, algoritma komputer, serta arsitektur jaringan.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-xl mb-4">
+            <i class="fas fa-briefcase"></i>
+          </div>
+          <h3 class="font-bold text-base text-slate-900 dark:text-white mb-2">Etika Kerja Nyata</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Berpengalaman lebih dari 1 tahun di bidang Admin Teknisi, Pergudangan, dan Purchasing. Terbiasa dengan akurasi pencatatan, kerja tim yang solid, serta target operasional.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-md transition">
+          <div class="w-12 h-12 rounded-xl bg-indigo-100 dark:bg-indigo-900/40 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-xl mb-4">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3 class="font-bold text-base text-slate-900 dark:text-white mb-2">Target & Orientasi</h3>
+          <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            Aktif mencari tempat magang atau internship IT di mana saya dapat menerapkan kemampuan, menerima bimbingan mentor berpengalaman, dan berkontribusi langsung.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KEAHLIAN & FOCUS -->
+  <section id="keahlian" class="py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Kompetensi</h2>
+        <p class="mt-1 text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Keahlian & Bidang Minat</p>
+      </div>
+
+      <!-- Bidang Minat -->
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+        <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center hover:border-blue-500 transition">
+          <i class="fas fa-code text-2xl text-blue-600 dark:text-blue-400 mb-2"></i>
+          <h4 class="text-xs font-bold text-slate-900 dark:text-white">Programmer</h4>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Logika & Algoritma</p>
+        </div>
+        <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center hover:border-blue-500 transition">
+          <i class="fas fa-tools text-2xl text-emerald-600 dark:text-emerald-400 mb-2"></i>
+          <h4 class="text-xs font-bold text-slate-900 dark:text-white">IT Support</h4>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Hardware & Troubleshoot</p>
+        </div>
+        <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center hover:border-blue-500 transition">
+          <i class="fas fa-network-wired text-2xl text-purple-600 dark:text-purple-400 mb-2"></i>
+          <h4 class="text-xs font-bold text-slate-900 dark:text-white">Jaringan</h4>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Konsep IP & Routing</p>
+        </div>
+        <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center hover:border-blue-500 transition">
+          <i class="fas fa-globe text-2xl text-amber-600 dark:text-amber-400 mb-2"></i>
+          <h4 class="text-xs font-bold text-slate-900 dark:text-white">Web Dev</h4>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">HTML, CSS, JavaScript</p>
+        </div>
+        <div class="p-4 rounded-xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center hover:border-blue-500 transition col-span-2 sm:col-span-1">
+          <i class="fas fa-chart-bar text-2xl text-rose-600 dark:text-rose-400 mb-2"></i>
+          <h4 class="text-xs font-bold text-slate-900 dark:text-white">Data Analyst</h4>
+          <p class="text-[11px] text-slate-500 dark:text-slate-400 mt-1">Spreadsheet & Insight</p>
+        </div>
+      </div>
+
+      <!-- Keahlian Teknis & Pendukung -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Teknis -->
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+            <i class="fas fa-microchip text-blue-600"></i> Kemampuan Teknis
+          </h3>
+          <div class="space-y-4">
+            <div>
+              <div class="flex justify-between text-xs font-medium mb-1">
+                <span>Web Development (HTML, CSS, JavaScript)</span>
+                <span class="text-blue-600 font-bold">Dasar Menengah</span>
+              </div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div class="bg-blue-600 h-full rounded-full" style="width: 75%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-medium mb-1">
+                <span>IT Support & Troubleshooting</span>
+                <span class="text-blue-600 font-bold">Mahir</span>
+              </div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div class="bg-blue-600 h-full rounded-full" style="width: 85%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-medium mb-1">
+                <span>Jaringan Komputer Dasar</span>
+                <span class="text-blue-600 font-bold">Dasar</span>
+              </div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div class="bg-blue-600 h-full rounded-full" style="width: 65%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-medium mb-1">
+                <span>Microsoft Office & Google Workspace</span>
+                <span class="text-blue-600 font-bold">Sangat Mahir</span>
+              </div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div class="bg-blue-600 h-full rounded-full" style="width: 90%"></div>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between text-xs font-medium mb-1">
+                <span>Administrasi Data & Inventori Gudang</span>
+                <span class="text-blue-600 font-bold">Mahir</span>
+              </div>
+              <div class="w-full bg-slate-100 dark:bg-slate-800 h-2 rounded-full overflow-hidden">
+                <div class="bg-blue-600 h-full rounded-full" style="width: 88%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pendukung / Soft Skills -->
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <h3 class="text-sm font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-4 flex items-center gap-2">
+            <i class="fas fa-user-check text-emerald-600"></i> Kemampuan Pendukung & Karakter
+          </h3>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-800">
+              <i class="fas fa-check-circle text-emerald-500 mb-1"></i>
+              <p class="text-xs font-semibold text-slate-800 dark:text-slate-200">Teliti & Rapi</p>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400">Pencatatan data akurat & rapi.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-800">
+              <i class="fas fa-users text-blue-500 mb-1"></i>
+              <p class="text-xs font-semibold text-slate-800 dark:text-slate-200">Kerja Sama Tim</p>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400">Komunikasi lugas & kooperatif.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-800">
+              <i class="fas fa-bolt text-amber-500 mb-1"></i>
+              <p class="text-xs font-semibold text-slate-800 dark:text-slate-200">Cepat Belajar</p>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400">Antusias mempelajari hal teknis baru.</p>
+            </div>
+            <div class="p-3 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-800">
+              <i class="fas fa-crosshairs text-rose-500 mb-1"></i>
+              <p class="text-xs font-semibold text-slate-800 dark:text-slate-200">Orientasi Target</p>
+              <p class="text-[11px] text-slate-500 dark:text-slate-400">Terbiasa bekerja dengan tenggat waktu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PENGALAMAN KERJA -->
+  <section id="pengalaman" class="py-16 bg-white dark:bg-slate-900/50 border-y border-slate-200/80 dark:border-slate-800/80">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Rekam Jejak</h2>
+        <p class="mt-1 text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Pengalaman Kerja</p>
+      </div>
+
+      <div class="relative border-l-2 border-slate-200 dark:border-slate-800 ml-4 md:ml-6 space-y-8">
+        
+        <!-- Experience 1 -->
+        <div class="relative pl-6 sm:pl-8 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 border-4 border-white dark:border-slate-900"></div>
+          <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+            <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+              <div>
+                <h3 class="text-base font-bold text-slate-900 dark:text-white">Admin Teknisi & Admin Gudang</h3>
+                <p class="text-sm font-semibold text-blue-600 dark:text-blue-400">PT. Total Solusindo Mesin</p>
+              </div>
+              <span class="text-xs px-2.5 py-1 rounded-full bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 font-medium">
+                Juni 2025 - September 2026
+              </span>
+            </div>
+            <ul class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 space-y-1.5 list-disc list-inside mt-3">
+              <li>Mengelola administrasi teknisi: jadwal penugasan kerja, laporan servis, dan dokumen pendukung operasional.</li>
+              <li>Mencatat arus barang masuk dan keluar serta memantau stok inventori secara rapi dan akurat.</li>
+              <li>Berkoordinasi aktif dengan tim teknisi dan divisi internal sehingga terbiasa dengan alur kerja teknis di lapangan.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="relative pl-6 sm:pl-8 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-white dark:border-slate-900"></div>
+          <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+            <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+              <div>
+                <h3 class="text-base font-bold text-slate-900 dark:text-white">Purchasing Staff</h3>
+                <p class="text-sm font-semibold text-indigo-600 dark:text-indigo-400">PT. Mandiri Prima Coal</p>
+              </div>
+              <span class="text-xs px-2.5 py-1 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">
+                Februari 2025 - Juni 2025
+              </span>
+            </div>
+            <ul class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 space-y-1.5 list-disc list-inside mt-3">
+              <li>Melakukan pengadaan kebutuhan barang dan membina komunikasi profesional dengan supplier.</li>
+              <li>Menyusun, memvalidasi, dan mengarsipkan dokumen pembelian (PO, invoice) dengan tingkat ketelitian tinggi.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="relative pl-6 sm:pl-8 group">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-400 border-4 border-white dark:border-slate-900"></div>
+          <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+            <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+              <div>
+                <h3 class="text-base font-bold text-slate-900 dark:text-white">Helper, Packer, Cashier & Baker</h3>
+                <p class="text-sm font-semibold text-slate-600 dark:text-slate-300">PT. Haeun Bakery</p>
+              </div>
+              <span class="text-xs px-2.5 py-1 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium">
+                September 2024 - Februari 2025
+              </span>
+            </div>
+            <ul class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 space-y-1.5 list-disc list-inside mt-3">
+              <li>Mendukung proses produksi, pengemasan produk dengan standar higienis, dan transaksi kasir secara teliti.</li>
+              <li>Melayani konsumen secara ramah serta tanggap terhadap kebutuhan pelanggan.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PENDIDIKAN -->
+  <section id="pendidikan" class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Latar Belakang</h2>
+        <p class="mt-1 text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Pendidikan Formal</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-500 transition">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-blue-100 dark:bg-blue-950/70 text-blue-700 dark:text-blue-300 inline-block mb-3">
+            2025 - Sekarang
+          </span>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white">Universitas Pamulang</h3>
+          <p class="text-xs font-medium text-blue-600 dark:text-blue-400 mt-0.5">S1 Teknik Informatika (Aktif)</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Mempelajari pemrograman web, algoritma & struktur data, arsitektur komputer, serta sistem jaringan.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 hover:border-blue-500 transition">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 inline-block mb-3">
+            2021 - 2024
+          </span>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white">MAN 12 Jakarta Barat</h3>
+          <p class="text-xs font-medium text-slate-600 dark:text-slate-300 mt-0.5">Matematika dan Ilmu Pengetahuan Alam (MIPA)</p>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-2">Mengasah fondasi logika berpikir sistematis, sains komputasi, dan matematika analitis.</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 inline-block mb-3">
+            2018 - 2021
+          </span>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white">MTs Sa'adatuddarain</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Pendidikan Menengah Pertama (Madrasah Tsanawiyah).</p>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-md bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 inline-block mb-3">
+            2012 - 2018
+          </span>
+          <h3 class="text-base font-bold text-slate-900 dark:text-white">SDN Kembangan Selatan 01 Pagi</h3>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Pendidikan Sekolah Dasar.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="kontak" class="py-16 bg-white dark:bg-slate-900/50 border-t border-slate-200/80 dark:border-slate-800/80">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Mari Terhubung</h2>
+        <p class="mt-1 text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Kontak Saya</p>
+        <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 mt-2">
+          Terbuka untuk diskusi penawaran magang IT, kolaborasi proyek, maupun konsultasi kebutuhan teknis.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+        <!-- Email Card -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 flex items-center justify-center text-lg mb-3">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h4 class="text-xs font-bold text-slate-900 dark:text-white">Email</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1 break-all">junaidi24642@gmail.com</p>
+          <a href="mailto:junaidi24642@gmail.com" class="inline-block mt-3 text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline">
+            Kirim Email &rarr;
+          </a>
+        </div>
+
+        <!-- WhatsApp Card -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-emerald-100 dark:bg-emerald-900/40 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-lg mb-3">
+            <i class="fab fa-whatsapp"></i>
+          </div>
+          <h4 class="text-xs font-bold text-slate-900 dark:text-white">WhatsApp</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">0882-2491-0376</p>
+          <a href="https://wa.me/6288224910376" target="_blank" class="inline-block mt-3 text-xs font-semibold text-emerald-600 dark:text-emerald-400 hover:underline">
+            Chat WhatsApp &rarr;
+          </a>
+        </div>
+
+        <!-- Lokasi Card -->
+        <div class="p-5 rounded-2xl bg-slate-50 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-center">
+          <div class="w-10 h-10 mx-auto rounded-xl bg-rose-100 dark:bg-rose-900/40 text-rose-600 dark:text-rose-400 flex items-center justify-center text-lg mb-3">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h4 class="text-xs font-bold text-slate-900 dark:text-white">Domisili</h4>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Kembangan Selatan</p>
+          <p class="text-[11px] text-slate-400 mt-0.5">Jakarta Barat, DKI Jakarta</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-6 border-t border-slate-200 dark:border-slate-800 text-center text-xs text-slate-500 dark:text-slate-400">
+    <p>&copy; <span id="year"></span> Junaidi. Portofolio dibuat dengan HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <!-- File JavaScript Eksternal -->
+  <script src="script.js"></script>
+</body>
+</html>

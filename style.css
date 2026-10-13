@@ -1,0 +1,26 @@
+/* Efek Kaca Transparan (Glassmorphism) */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.dark .glassmorphism {
+  background: rgba(15, 23, 42, 0.85);
+}
+
+/* Transisi halus saat beralih tema */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Kursor berkedip untuk efek ketik */
+#typedText {
+  display: inline-block;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { border-color: transparent; }
+  50% { border-color: currentColor; }
+}
